@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url("../img/fundo3.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1rf 2rf 1rf ;
+    grid-template-rows: repeat(5,150px);
+    gap: 10px;
+    grid-template-areas: 'title title title'
+                         '. result .'
+                        '. cartas .'
+                        '. cartas .'
+                        '. button .'
+
+}
+.result {
+    border-radius:10px;
+    background-color: #f6a7f2;
+    display: flex;
+    grid-area: result;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 70px;
+    grid-area: title;
+    text-align: center;
+}
+h2 { 
+    margin:5%;
+    flex-direction: row;
+
+}
+.main {
+    position: relative;
+    grid-area: cartas;
+    display: flex;
+   
+     
+}
+.grid {
+position: absolute;
+padding: 10px;
+justify-content:  center;
+gap: 10px;
+display: flex;
+flex-wrap: wrap;
+}
+
+#button{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    grid-area: button;
+
+}
+button{
+    width: 30%;
+    height: 30%;
+    border-radius:10px;
+    background-color: #7ced52;
+}
+
+img{
+    width: 20%;
+    height:0% ;
+
+}
+    
